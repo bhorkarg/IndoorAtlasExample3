@@ -28,7 +28,8 @@
             android:enabled="true"
             android:exported="false" />
 
-        <activity android:name=".LocationActivity"></activity>
+        <activity android:name=".LocationActivity" />
+        <activity android:name=".FloorPlanActivity"></activity>
     </application>
 
 </manifest>

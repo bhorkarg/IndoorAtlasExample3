@@ -9,4 +9,59 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bhorkarg.indooratlasexample3.LocationActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/btnStartLoc"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btnStopLoc"
+        android:onClick="onButtonClick"
+        android:enabled="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/btnStopLoc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onButtonClick"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Location"
+        android:id="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/btnStartLoc"
+        android:layout_toStartOf="@+id/btnStartLoc"
+        android:layout_alignParentTop="true"
+        android:singleLine="false"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lng:"
+        android:id="@+id/txtLng"
+        android:textColor="#000e8e"
+        android:layout_below="@+id/txtLat"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnStopLoc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lat:"
+        android:id="@+id/txtLat"
+        android:textColor="#000e8e"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnStopLoc" />
+
 </RelativeLayout>
